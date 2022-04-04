@@ -396,8 +396,22 @@ console.log("Number 19:", checkFactor(105))
 // Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 
 function createAcronym(string) {
-   return string.split("")
+   let words = string.split(' ');
+   let acronym = "";
+   let index = 0;
+    while (index<words.length) {
+       let  nextWord = words[index];
+        acronym = acronym + nextWord.charAt(0);
+        index = index + 1;
+
+
+    }
+    return acronym
 }
 
 console.log(createAcronym("Rode To Code"))
+
+
+
+
 
