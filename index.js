@@ -409,8 +409,15 @@ function createAcronym(string) {
     return acronym
 }
 
+
+// getting the characters of a string
+
 console.log(createAcronym("Rode To Code"))
 
+function split(string) {
+   return string.split(" ")[0].charAt(2);
+}
+console.log(split("Rode to Code"))
 
 
 
