@@ -229,6 +229,22 @@ console.log("number 11:",findLongestString(["ab", "a", "abcd"]));
 //     btuse angle: An angle between 90 and 180 degrees.
 //     Straight angle: A 180 degree angle.
 
+
+function findAngle(degree) {
+    if ( degree> 0 && degree < 90) {
+        return "Acute angle"
+    } else if (degree = 90) {
+        return "Right angle"
+    } else if (degree > 90) {
+        return "btuse angle"
+    } else if (degree = 180) {
+        return "Straight angle"
+    }
+}
+
+console.log("Number 12:",findAngle(60))
+
+
 // 13)
 
 // Create a function to find the index of the greatest element of a given array of integers
@@ -249,15 +265,42 @@ function indexOfMax(arr) {
     return maxIndex;
 }
 
-console.log(indexOfMax([6, 7, 8, 19, 12]))
+console.log("Number 13:",indexOfMax([6, 7, 8, 19, 12]))
 
 // 14)
 
 // Create a function to get the largest even number from an array of integers.
+array = [8, 9, 16, 4, 19]
+largestNumber = 0
+function largesteven() {
+    
+    for (let i = 0; i < array.length; i++) {
+        if ( array[i] % 2 === 0 && array[i] > largestNumber) {
+            largestNumber = array[i]
+            }
+        }
+    return largestNumber
+}
+
+console.log("Number 14:", largesteven(array))
+
 
 // 16)
 
 // Create a function to check from two given integers, whether one is positive and another one is negative.
+function checkPolarity(x,y) {
+    if(x > 0 && y > 0 ) {
+        return "both positive"
+    } else if (x > 0 && y < 0 ) {
+        return "only X is positive"
+    } else if ( x < 0 && y > 0) {
+    return "only Y is postive"
+    } else if (x < 0 && y < 0 ) {
+        return "both negative"
+}
+}
+console.log("Number 16:", checkPolarity(1,-1))
+
 
 // 17)
 
