@@ -306,9 +306,31 @@ console.log("Number 16:", checkPolarity(1,-1))
 
 // Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
 
+function changeChar(string) {
+   if (string.length < 3){
+       return string.toUpperCase();
+   } else {
+       first3 = string.substring(0,3).toLowerCase();
+        others = string.substring(3, string.length).toUpperCase();
+        return first3 + others
+   }
+}
+
+console.log("Number 17:", changeChar("adegbami"))
+
+
 // 18)
 
 // Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+let kakulate = function (int1, int2) {
+    if ((int1 + int2) >= 50  && (int1 + int2) <= 80) {
+
+        return 65
+    } else {
+        return 80
+    }
+}
+console.log("Number 18:", kakulate(10, 50))
 
 // 19)
 
