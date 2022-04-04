@@ -348,6 +348,56 @@ console.log("Number 18:", kakulate(10, 50))
 // 34 has four factors: 1, 2, 17, and 34.
 // this would be "34".
 
+// function checkFactor(num) {
+//     if ( num % 3 === 0){
+//         return "Diego"
+//     } else if ( num % 5 === 0){
+//         return "Riccardo"
+//     } else if (num % 7 === 0) {
+//         return "stefano"
+//     } else if ( num % 3 === 0 && num % 5 === 0) {
+//         return "Diego" + "Riccardo"
+//     } else if (num % 3 === 0 && num % 7 === 0) {
+//         return "Diego" + "stefano"
+//     } else if ( num % 5 === 0 && num % 7 === 0) {
+//         return "Riccardo" + "stefano"
+//     } else if (num % 3 === 0 && num % 5 === 0 && num % 7 === 0){
+//         return "Diego" + "Riccardo" + "stefano"
+//     } else {
+//         return num
+//     }
+
+// }
+
+function checkFactor(num) {
+    if (num % 3 === 0 && num % 5 === 0 && num % 7 === 0){
+        return "Diego" + "Riccardo" + "stefano"
+    } else if ( num % 3 === 0 && num % 5 === 0) {
+        return "Diego" + "Riccardo"
+    } else if (num % 3 === 0 && num % 7 === 0) {
+        return "Diego" + "stefano"
+    } else if ( num % 5 === 0 && num % 7 === 0) {
+        return "Riccardo" + "stefano"
+    } if ( num % 3 === 0){
+        return "Diego"
+    } else if ( num % 5 === 0){
+        return "Riccardo"
+    } else if (num % 7 === 0) {
+        return "stefano"
+}
+}
+
+
+
+console.log("Number 19:", checkFactor(105))
+
+
 // 20)
 // Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
+
+function createAcronym(string) {
+   return string.split("")
+}
+
+console.log(createAcronym("Rode To Code"))
 
