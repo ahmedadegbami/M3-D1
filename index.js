@@ -105,9 +105,19 @@ function copy_strings (str, n)
   
 }
 
-console.log(copy_strings("Ahmed", 2));
+console.log("Number 6:",copy_strings("Ahmed", 2));
 
 
+
+let empty = ""
+function repeatString (string, n) {
+    for (let i = 0; i < n; i++){
+        empty = empty + string + " "
+    }
+    return empty
+}
+
+console.log("Number 6:",repeatString ("AHMED", 3))
 
 /*
 
@@ -124,7 +134,7 @@ function startWith(city) {
 
 }
 
-console.log("Number 6:", startWith("NewYork"))
+console.log("Number 7:", startWith("NewYork"))
 
 
 
@@ -154,9 +164,9 @@ console.log("NUmber 8:", addArray())
 9)
 Create a function to test whether an array of integers of length 2 contains 1 or a 3. 
 */
- function find13(nums) {
+ function find13(arry) {
 
-    if (nums.indexOf(1) != -1 || nums.indexOf(3) != -1){
+    if (arry.indexOf(1) != -1 || arry.indexOf(3) != -1){
        return true
     } 
     else
@@ -167,6 +177,12 @@ Create a function to test whether an array of integers of length 2 contains 1 or
 
 console.log("NUmber 9:",find13([1, 5]));  
 
+
+function consist1or3(arry) {
+    return (arry.includes(1) || arry.includes(3)) 
+}
+
+console.log("NUmber 9b:",consist1or3([8, 5]));  
 
 
 
@@ -190,10 +206,13 @@ function search13(nums) {
 
 console.log("NUmber 10:",search13([3, 5]));  
 
-  
+
+function consistNot1or3(arry) {
+    return (!consist1or3(arry)) 
+}
 
 
-
+console.log("NUmber 10b:",consistNot1or3([8, 5])); 
 
 
 // 11)
